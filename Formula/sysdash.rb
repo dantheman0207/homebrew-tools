@@ -5,12 +5,12 @@
 class Sysdash < Formula
   desc "Keyboard-driven macOS system dashboard"
   homepage "https://github.com/dantheman0207/sysdash"
-  version "1.1.0"
+  version "1.1.1"
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/dantheman0207/sysdash/releases/download/v1.1.0/sysdash_1.1.0_darwin_arm64.tar.gz"
-    sha256 "a8055de87fb2ff3738567b57269f8303236fe536b08a999dbc02e019e7ceef44"
+    url "https://github.com/dantheman0207/sysdash/releases/download/v1.1.1/sysdash_1.1.1_darwin_arm64.tar.gz"
+    sha256 "dfa6bf052fec0bb77200f95755fea37cbe1a37cdffaa7d94e2a77a45c48878a8"
 
     define_method(:install) do
       bin.install "sysdash"
